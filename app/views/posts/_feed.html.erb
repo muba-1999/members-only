@@ -1,0 +1,26 @@
+<div class="column">
+    <article class="media box">
+        <div class="media-content">
+            <%= render "posts/form" %>
+        </div>
+    </article>
+
+    <% @posts.each do |post | %>
+        <div class="box">
+            <article class="media">
+                <figure class="media-left">
+                    <p class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/64x64.png">
+                    <p>
+                </figure>
+                <div class="media content">
+                    <div class="content">
+                        <strong>Mubanga Mukoba<strong><br/><br/>
+                        <p><%= post.post %></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    <% end %>
+</div>
